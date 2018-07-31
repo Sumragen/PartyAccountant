@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "party-composer": {
+    "party-accountant": {
       "root": "",
       "sourceRoot": "src",
       "projectType": "application",
@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/party-composer",
+            "outputPath": "dist/party-accountant",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -50,18 +50,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "party-composer:build"
+            "browserTarget": "party-accountant:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "party-composer:build:production"
+              "browserTarget": "party-accountant:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "party-composer:build"
+            "browserTarget": "party-accountant:build"
           }
         },
         "test": {
@@ -95,7 +95,7 @@
         }
       }
     },
-    "party-composer-e2e": {
+    "party-accountant-e2e": {
       "root": "e2e/",
       "projectType": "application",
       "architect": {
@@ -103,11 +103,11 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "party-composer:serve"
+            "devServerTarget": "party-accountant:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "party-composer:serve:production"
+              "devServerTarget": "party-accountant:serve:production"
             }
           }
         },
@@ -123,5 +123,5 @@
       }
     }
   },
-  "defaultProject": "party-composer"
+  "defaultProject": "party-accountant"
 }

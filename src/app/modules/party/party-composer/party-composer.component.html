@@ -4,7 +4,9 @@
       Party Name:
       <input type="text" formControlName="name">
     </div>
-    <h2>People</h2>
+    <div>
+      <span>Members</span>
+    </div>
     <h2>Goods</h2>
   </form>
   <button type="submit" (click)="createParty()" [disabled]="composerForm.invalid">Submit</button>
