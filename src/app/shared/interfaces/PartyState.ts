@@ -1,5 +1,5 @@
 import {Party} from './Party';
 
-export interface PartyReducer {
+export interface PartyState {
   parties: Party[];
 }

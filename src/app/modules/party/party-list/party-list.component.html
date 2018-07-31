@@ -1,3 +1,9 @@
-<p>
-  party-list works!
-</p>
+<div class="party-list-wrapper">
+  <p>party list component</p>
+  <div class="party-list">
+    <h2>Party List</h2>
+    <div class="party-item" *ngFor="let party of (partyState | async).parties">
+      {{party}}
+    </div>
+  </div>
+</div>
